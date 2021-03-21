@@ -33,4 +33,4 @@ Or you can just use the `c!reportbug`command to report a bug, and `c!feedback` t
 For help with the bot, please see the wiki (linked above).
 
 ## Can I self-host Lemon?
-I wouldn't recommend doing that as self-hosting (running a copy yourself) or atleast build the bot at all because that's not supported, and no help will be provided for editing not compiling the code in this repository. The souce code is provided here for transparency about how the bot's primary features work. If you decide to edit, compile, or use this code in any way, please respect the [license]().
+I wouldn't recommend doing that as self-hosting (running a copy yourself) or atleast build the bot at all because that's not supported, and no help will be provided for editing not compiling the code in this repository. The souce code is provided here for transparency about how the bot's primary features work. If you decide to edit, compile, or use this code in any way, please respect the [license](https://github.com/japandotorg/Lemon/blob/main/LICENSE).
