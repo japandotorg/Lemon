@@ -1,0 +1,1476 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
+    
+    
+      
+        <title>Commands - Lemon</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e35208c4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#general-commands" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Lemon" class="md-header__button md-logo" aria-label="Lemon" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lemon
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Commands
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Lemon" class="md-nav__button md-logo" aria-label="Lemon" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Lemon
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Home/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../About-Lemon/" class="md-nav__link">
+        About Lemon
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Getting-Started/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Moderator-Guide/" class="md-nav__link">
+        Moderator GUide
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Points-And-Crown/" class="md-nav__link">
+        Points And Crown
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Warns/" class="md-nav__link">
+        Warns
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Commands
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Commands
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-commands" class="md-nav__link">
+    📜 General Commands
+  </a>
+  
+    <nav class="md-nav" aria-label="📜 General Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cbotinfo" class="md-nav__link">
+    c!botinfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cinviteme" class="md-nav__link">
+    c!inviteme
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cping" class="md-nav__link">
+    c!ping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cadmins" class="md-nav__link">
+    c!admins
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caliases-command" class="md-nav__link">
+    c!aliases &lt;command&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cavatar-userid" class="md-nav__link">
+    c!avatar &lt;user/ID&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cchannelinfo-channelid" class="md-nav__link">
+    c!channelinfo &lt;channel/ID&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cemojis" class="md-nav__link">
+    c!emojis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cfindid-userrolechannel" class="md-nav__link">
+    c!findid &lt;user/role/channel&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cmembers" class="md-nav__link">
+    c!members
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cmods" class="md-nav__link">
+    c!mods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cpermissions-userid" class="md-nav__link">
+    c!permissions &lt;user/ID&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#croleinfo-roleid" class="md-nav__link">
+    c!roleinfo &lt;role/ID&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cservercount" class="md-nav__link">
+    c!servercount
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cservericon" class="md-nav__link">
+    c!servericon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cserverstaff" class="md-nav__link">
+    c!serverstaff
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cuptime" class="md-nav__link">
+    c!uptime
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cwhois-userid" class="md-nav__link">
+    c!whois &lt;user/ID&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cgithub-account-name" class="md-nav__link">
+    c!github &lt;account name&gt;
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fun-commands" class="md-nav__link">
+    🔮 Fun Commands
+  </a>
+  
+    <nav class="md-nav" aria-label="🔮 Fun Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c8ball-question" class="md-nav__link">
+    c!8ball &lt;question&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cbird" class="md-nav__link">
+    c!bird
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccat" class="md-nav__link">
+    c!cat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccatfact" class="md-nav__link">
+    c!catfact
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    c!
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cdog" class="md-nav__link">
+    c!dog
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cdogfact" class="md-nav__link">
+    c!dogfact
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cduck" class="md-nav__link">
+    c!duck
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cemojify-message" class="md-nav__link">
+    c!emojify &lt;message&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cfox" class="md-nav__link">
+    c!fox
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cmeme" class="md-nav__link">
+    c!meme
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#croll-dice-sides" class="md-nav__link">
+    c!roll &lt;dice sides&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crpsn-rock-paper-scissors" class="md-nav__link">
+    c!rpsn &lt;rock | paper | scissors&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#say-channel-message" class="md-nav__link">
+    say &lt;channel&gt; &lt;message&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cshibe" class="md-nav__link">
+    c!shibe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csolotrivia-topic" class="md-nav__link">
+    c!solotrivia &lt;topic&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cthouart-userid" class="md-nav__link">
+    c!thouart &lt;user/ID&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ctopics" class="md-nav__link">
+    c!topics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ctrivia-topic" class="md-nav__link">
+    c!trivia &lt;topic&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ctrumptweet-message" class="md-nav__link">
+    c!trumptweet &lt;message&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cyesno-message" class="md-nav__link">
+    c!yesno &lt;message&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cyomomma-userid" class="md-nav__link">
+    c!yomomma &lt;user/ID&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cyoutube-video-name" class="md-nav__link">
+    c!youtube &lt;video name&gt;
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#color-commands" class="md-nav__link">
+    🌈 Color Commands
+  </a>
+  
+    <nav class="md-nav" aria-label="🌈 Color Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ccolor-roleidcolor-role-name" class="md-nav__link">
+    c!color &lt;role/ID/color role name&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccolors" class="md-nav__link">
+    c!colors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccreatecolor-hex-color-name" class="md-nav__link">
+    c!createcolor &lt;hex&gt; color name&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccreatedefaultcolors" class="md-nav__link">
+    c!createdefaultcolors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crandomcolor" class="md-nav__link">
+    c!randomcolor
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#points" class="md-nav__link">
+    👑 Points
+  </a>
+  
+    <nav class="md-nav" aria-label="👑 Points">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ccrown" class="md-nav__link">
+    c!crown
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cexplainpoints" class="md-nav__link">
+    c!explainpoints
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cgivepoints-userid-point-count" class="md-nav__link">
+    c!givepoints &lt;user/ID&gt; &lt;point count&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cleaderboard" class="md-nav__link">
+    c!leaderboard
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cpoints-userid" class="md-nav__link">
+    c!points &lt;user/ID&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cpointsper" class="md-nav__link">
+    c!pointsper
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cposition-userid" class="md-nav__link">
+    c!position &lt;user/ID&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ctotalpoints-userid" class="md-nav__link">
+    c!totalpoints &lt;user/ID&gt;
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#misc-commands" class="md-nav__link">
+    🔰 Misc Commands
+  </a>
+  
+    <nav class="md-nav" aria-label="🔰 Misc Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cfeedback-message" class="md-nav__link">
+    c!feedback &lt;message&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creportbug-message" class="md-nav__link">
+    c!reportbug &lt;message&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cnickname-nickname" class="md-nav__link">
+    c!nickname &lt;nickname&gt;
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moderator-commands" class="md-nav__link">
+    🔨 Moderator Commands
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-commands" class="md-nav__link">
+    📜 General Commands
+  </a>
+  
+    <nav class="md-nav" aria-label="📜 General Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cbotinfo" class="md-nav__link">
+    c!botinfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cinviteme" class="md-nav__link">
+    c!inviteme
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cping" class="md-nav__link">
+    c!ping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cadmins" class="md-nav__link">
+    c!admins
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caliases-command" class="md-nav__link">
+    c!aliases &lt;command&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cavatar-userid" class="md-nav__link">
+    c!avatar &lt;user/ID&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cchannelinfo-channelid" class="md-nav__link">
+    c!channelinfo &lt;channel/ID&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cemojis" class="md-nav__link">
+    c!emojis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cfindid-userrolechannel" class="md-nav__link">
+    c!findid &lt;user/role/channel&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cmembers" class="md-nav__link">
+    c!members
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cmods" class="md-nav__link">
+    c!mods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cpermissions-userid" class="md-nav__link">
+    c!permissions &lt;user/ID&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#croleinfo-roleid" class="md-nav__link">
+    c!roleinfo &lt;role/ID&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cservercount" class="md-nav__link">
+    c!servercount
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cservericon" class="md-nav__link">
+    c!servericon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cserverstaff" class="md-nav__link">
+    c!serverstaff
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cuptime" class="md-nav__link">
+    c!uptime
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cwhois-userid" class="md-nav__link">
+    c!whois &lt;user/ID&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cgithub-account-name" class="md-nav__link">
+    c!github &lt;account name&gt;
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fun-commands" class="md-nav__link">
+    🔮 Fun Commands
+  </a>
+  
+    <nav class="md-nav" aria-label="🔮 Fun Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c8ball-question" class="md-nav__link">
+    c!8ball &lt;question&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cbird" class="md-nav__link">
+    c!bird
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccat" class="md-nav__link">
+    c!cat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccatfact" class="md-nav__link">
+    c!catfact
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    c!
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cdog" class="md-nav__link">
+    c!dog
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cdogfact" class="md-nav__link">
+    c!dogfact
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cduck" class="md-nav__link">
+    c!duck
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cemojify-message" class="md-nav__link">
+    c!emojify &lt;message&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cfox" class="md-nav__link">
+    c!fox
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cmeme" class="md-nav__link">
+    c!meme
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#croll-dice-sides" class="md-nav__link">
+    c!roll &lt;dice sides&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crpsn-rock-paper-scissors" class="md-nav__link">
+    c!rpsn &lt;rock | paper | scissors&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#say-channel-message" class="md-nav__link">
+    say &lt;channel&gt; &lt;message&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cshibe" class="md-nav__link">
+    c!shibe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csolotrivia-topic" class="md-nav__link">
+    c!solotrivia &lt;topic&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cthouart-userid" class="md-nav__link">
+    c!thouart &lt;user/ID&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ctopics" class="md-nav__link">
+    c!topics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ctrivia-topic" class="md-nav__link">
+    c!trivia &lt;topic&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ctrumptweet-message" class="md-nav__link">
+    c!trumptweet &lt;message&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cyesno-message" class="md-nav__link">
+    c!yesno &lt;message&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cyomomma-userid" class="md-nav__link">
+    c!yomomma &lt;user/ID&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cyoutube-video-name" class="md-nav__link">
+    c!youtube &lt;video name&gt;
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#color-commands" class="md-nav__link">
+    🌈 Color Commands
+  </a>
+  
+    <nav class="md-nav" aria-label="🌈 Color Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ccolor-roleidcolor-role-name" class="md-nav__link">
+    c!color &lt;role/ID/color role name&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccolors" class="md-nav__link">
+    c!colors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccreatecolor-hex-color-name" class="md-nav__link">
+    c!createcolor &lt;hex&gt; color name&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccreatedefaultcolors" class="md-nav__link">
+    c!createdefaultcolors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crandomcolor" class="md-nav__link">
+    c!randomcolor
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#points" class="md-nav__link">
+    👑 Points
+  </a>
+  
+    <nav class="md-nav" aria-label="👑 Points">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ccrown" class="md-nav__link">
+    c!crown
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cexplainpoints" class="md-nav__link">
+    c!explainpoints
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cgivepoints-userid-point-count" class="md-nav__link">
+    c!givepoints &lt;user/ID&gt; &lt;point count&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cleaderboard" class="md-nav__link">
+    c!leaderboard
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cpoints-userid" class="md-nav__link">
+    c!points &lt;user/ID&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cpointsper" class="md-nav__link">
+    c!pointsper
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cposition-userid" class="md-nav__link">
+    c!position &lt;user/ID&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ctotalpoints-userid" class="md-nav__link">
+    c!totalpoints &lt;user/ID&gt;
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#misc-commands" class="md-nav__link">
+    🔰 Misc Commands
+  </a>
+  
+    <nav class="md-nav" aria-label="🔰 Misc Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cfeedback-message" class="md-nav__link">
+    c!feedback &lt;message&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creportbug-message" class="md-nav__link">
+    c!reportbug &lt;message&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cnickname-nickname" class="md-nav__link">
+    c!nickname &lt;nickname&gt;
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moderator-commands" class="md-nav__link">
+    🔨 Moderator Commands
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Commands</h1>
+                
+                <p>This is a summary of all of Lemon's commands. Do not include <code>&lt;&gt;</code> nor <code>[]</code> when running commands!</p>
+<h2 id="general-commands">📜 General Commands</h2>
+<h3 id="cbotinfo"><code>c!botinfo</code></h3>
+<p>Shows information about the bot, including its version number, some features, and some statistics.</p>
+<h3 id="cinviteme"><code>c!inviteme</code></h3>
+<p>Provides Lemon's invite link. If you are having trouble inviting Lemon, make sure you are correctly logged in at https://discordapp.com/login</p>
+<h3 id="cping"><code>c!ping</code></h3>
+<p>Check Lemon's latency.</p>
+<h3 id="cadmins"><code>c!admins</code></h3>
+<p>Displays a list of all the current admins.</p>
+<h3 id="caliases-command"><code>c!aliases &lt;command&gt;</code></h3>
+<p>Displays a list of all current aliases for the given command type. If no command type is given, the amount of aliases for every type will be displayed.</p>
+<h3 id="cavatar-userid"><code>c!avatar &lt;user/ID&gt;</code></h3>
+<p>Displays a user's avatar (profile picture). If no user is mentioned or no ID is provided then Lemon will show your own avatar.</p>
+<h3 id="cchannelinfo-channelid"><code>c!channelinfo &lt;channel/ID&gt;</code></h3>
+<p>Displays information about the provided channel. If no channel is given, the current channel will be used.</p>
+<h3 id="cemojis"><code>c!emojis</code></h3>
+<p>Displays all the emojis the server has</p>
+<h3 id="cfindid-userrolechannel"><code>c!findid &lt;user/role/channel&gt;</code></h3>
+<p>Fetches and sends the ID of the mentioned user, role, or text channel.</p>
+<h3 id="cmembers"><code>c!members</code></h3>
+<p>Displays how many server members are online, busy, AFK, or offline.</p>
+<h3 id="cmods"><code>c!mods</code></h3>
+<p>Displays a list of all the current moderators.</p>
+<h3 id="cpermissions-userid"><code>c!permissions &lt;user/ID&gt;</code></h3>
+<p>Displays all current permissions for the specified user. If no user is given, your own permissions will be displayed.</p>
+<h3 id="croleinfo-roleid"><code>c!roleinfo &lt;role/ID&gt;</code></h3>
+<p>Fetches and displays the information about the provided role.</p>
+<h3 id="cservercount"><code>c!servercount</code></h3>
+<p>Fetches and displays Lemon's current server count and user count.</p>
+<h3 id="cservericon"><code>c!servericon</code></h3>
+<p>Displays the server's icon.</p>
+<h3 id="cserverstaff"><code>c!serverstaff</code></h3>
+<p>Displays a list of all current server moderators and admins.</p>
+<h3 id="cuptime"><code>c!uptime</code></h3>
+<p>Fetches Lemon's current uptime.</p>
+<h3 id="cwhois-userid"><code>c!whois &lt;user/ID&gt;</code></h3>
+<p>Fetches a user's information. If no user is given, your own information will be displayed.</p>
+<h3 id="cgithub-account-name"><code>c!github &lt;account name&gt;</code></h3>
+<p>Fetches and displays the github account provided.</p>
+<h2 id="fun-commands">🔮 Fun Commands</h2>
+<h3 id="c8ball-question"><code>c!8ball &lt;question&gt;</code></h3>
+<p>Ask the Magic 8-ball for some psychic wisdom.</p>
+<h3 id="cbird"><code>c!bird</code></h3>
+<p>Sends a random bird image.</p>
+<h3 id="ccat"><code>c!cat</code></h3>
+<p>Sends a random cat image.</p>
+<h3 id="ccatfact"><code>c!catfact</code></h3>
+<p>Sends a random fact about cats.</p>
+<h3 id="c"><code>c!</code></h3>
+<p>Flips a coin (heads or tails).</p>
+<h3 id="cdog"><code>c!dog</code></h3>
+<p>Sends a random dog image.</p>
+<h3 id="cdogfact"><code>c!dogfact</code></h3>
+<p>Sends a random fact about dogs.</p>
+<h3 id="cduck"><code>c!duck</code></h3>
+<p>Sends a random duck image.</p>
+<h3 id="cemojify-message"><code>c!emojify &lt;message&gt;</code></h3>
+<p>Swaps every letter within the provided message with an emoji.</p>
+<h3 id="cfox"><code>c!fox</code></h3>
+<p>Sends a random fox image.</p>
+<h3 id="cmeme"><code>c!meme</code></h3>
+<p>Sends a random meme from r/memes or r/dankmemes or r/me_irl subreddits.</p>
+<h3 id="croll-dice-sides"><code>c!roll &lt;dice sides&gt;</code></h3>
+<p>Rolls a dice with the specified number of sides, the default is 6 sides if no number is given.</p>
+<h3 id="crpsn-rock-paper-scissors"><code>c!rpsn &lt;rock | paper | scissors&gt;</code></h3>
+<p>Play a game of rock-paper-scissors against Lemon!</p>
+<h3 id="say-channel-message"><code>say &lt;channel&gt; &lt;message&gt;</code></h3>
+<p>Sends a message to the specified channel. If no channel is given, then the message will be sent to the current channel.</p>
+<h3 id="cshibe"><code>c!shibe</code></h3>
+<p>sends a random shibe for your viewing pleasure</p>
+<h3 id="csolotrivia-topic"><code>c!solotrivia &lt;topic&gt;</code></h3>
+<p>Test your knowledge in a game of trivia (only you can answer). If no topic is given, a random one will be chosen. The question will expire after 15 seconds.</p>
+<h3 id="cthouart-userid"><code>c!thouart &lt;user/ID&gt;</code></h3>
+<p>Says a random Elizabethan insult to the specified user. If no user is given, then the insult will be directed at you!</p>
+<h3 id="ctopics"><code>c!topics</code></h3>
+<p>Displays the list of all available trivia topics.</p>
+<h3 id="ctrivia-topic"><code>c!trivia &lt;topic&gt;</code></h3>
+<p>Compete against your friends in a game of trivia (anyone can answer). If no topic is given, a random one will be chosen. The question will expire after 15 seconds.</p>
+<h3 id="ctrumptweet-message"><code>c!trumptweet &lt;message&gt;</code></h3>
+<p>Display's a custom tweet from Donald Trump with the message provided.</p>
+<h3 id="cyesno-message"><code>c!yesno &lt;message&gt;</code></h3>
+<p>Sends a random yes or no gif for your message (question).</p>
+<h3 id="cyomomma-userid"><code>c!yomomma &lt;user/ID&gt;</code></h3>
+<p>Says a random "yo momma" joke to the specified user. If no user is given, then the joke will be directed at you!</p>
+<h3 id="cyoutube-video-name"><code>c!youtube &lt;video name&gt;</code></h3>
+<p>Searches and sends YouTube link for the specified video.</p>
+<h2 id="color-commands">🌈 Color Commands</h2>
+<h3 id="ccolor-roleidcolor-role-name"><code>c!color &lt;role/ID/color role name&gt;</code></h3>
+<p>Changes your current color to the one specified. Provide no color to clear your current color role. In order for this to work you'll have to setup color role system with Lemon.</p>
+<h3 id="ccolors"><code>c!colors</code></h3>
+<p>Displays a list of all available colors.</p>
+<h3 id="ccreatecolor-hex-color-name"><code>c!createcolor &lt;hex&gt; color name&gt;</code></h3>
+<p>Creates a new role for the given color hex. Color roles are denoted by the prefix #. If you remove the <code>#</code> prefix Lemon will not be able to identify the color role.</p>
+<h3 id="ccreatedefaultcolors"><code>c!createdefaultcolors</code></h3>
+<p>Generates the 6 default color roles that come with packaged with Lemon on your server. Color roles are denoted by the prefix #. If you remove the <code>#</code> prefix Lemon will not be able to identify the color role.</p>
+<h3 id="crandomcolor"><code>c!randomcolor</code></h3>
+<p>Changes your current color to a random different one. This only works if you have setup color role system with Lemon.</p>
+<h2 id="points">👑 Points</h2>
+<h3 id="ccrown"><code>c!crown</code></h3>
+<p>Displays all crowned server members, the crown role and the crown schedule.</p>
+<h3 id="cexplainpoints"><code>c!explainpoints</code></h3>
+<p>Explains the various aspects about Lemon's points and crown systems.</p>
+<h3 id="cgivepoints-userid-point-count"><code>c!givepoints &lt;user/ID&gt; &lt;point count&gt;</code></h3>
+<p>Gives the specified amount of your own points to the mentioned user.</p>
+<h3 id="cleaderboard"><code>c!leaderboard</code></h3>
+<p>Displays the server points leaderboard of the provided member count. If no member count is given, the leaderboard will default to size 10. The max leaderboard size is 25.</p>
+<h3 id="cpoints-userid"><code>c!points &lt;user/ID&gt;</code></h3>
+<p>Fetches a user's points. If no user is given, your own points will be displayed.</p>
+<h3 id="cpointsper"><code>c!pointsper</code></h3>
+<p>Displays the server's amount of points earned per action.</p>
+<h3 id="cposition-userid"><code>c!position &lt;user/ID&gt;</code></h3>
+<p>Fetches a user's current leaderboard position. If no user is given, your own position will be displayed.</p>
+<h3 id="ctotalpoints-userid"><code>c!totalpoints &lt;user/ID&gt;</code></h3>
+<p>Fetches a user's total points. If no user is given, your own total points will be displayed.</p>
+<h2 id="misc-commands">🔰 Misc Commands</h2>
+<h3 id="cfeedback-message"><code>c!feedback &lt;message&gt;</code></h3>
+<p>Sends a message to Lemon's Support Server's feedback channel.</p>
+<h3 id="creportbug-message"><code>c!reportbug &lt;message&gt;</code></h3>
+<p>Sends a message to the Support Server's bug report channel. When reporting a bug, please include as much information as possible.</p>
+<h3 id="cnickname-nickname"><code>c!nickname &lt;nickname&gt;</code></h3>
+<p>Changes your own nickname to the one specified. The nickname cannot be larger than 32 characters.</p>
+<h2 id="moderator-commands">🔨 Moderator Commands</h2>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../Warns/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Warns
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      
+    
+  </body>
+</html>
