@@ -1,0 +1,13 @@
+site_name: Lemon
+
+nav:
+  - Home: Home.md
+  - About Lemon: About-Lemon.md
+  - Getting Started: Getting-Started.md
+  - Moderator GUide: Moderator-Guide.md
+  - Points And Crown: Points-And-Crown.md
+  - Warns: Warns.md
+  - Commands: Commands.md
+
+theme: material
+
