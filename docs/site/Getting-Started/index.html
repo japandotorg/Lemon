@@ -1,0 +1,637 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
+    
+    
+      
+        <title>Getting Started - Lemon</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e35208c4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#is-lemon-the-right-bot-for-your-server" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Lemon" class="md-header__button md-logo" aria-label="Lemon" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lemon
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Getting Started
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Lemon" class="md-nav__button md-logo" aria-label="Lemon" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Lemon
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Home/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../About-Lemon/" class="md-nav__link">
+        About Lemon
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Getting Started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Getting Started
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#is-lemon-the-right-bot-for-your-server" class="md-nav__link">
+    💛 Is Lemon the right bot for your server?
+  </a>
+  
+    <nav class="md-nav" aria-label="💛 Is Lemon the right bot for your server?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lemon-is-probably-a-useful-bot-for-your-server-if" class="md-nav__link">
+    Lemon is probably a useful bot for your server if:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lemon-is-probably-not-the-right-bot-for-your-server-if" class="md-nav__link">
+    Lemon is probably NOT the right bot for your server if:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    💛 Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-lemon-to-your-server" class="md-nav__link">
+    💛 Adding Lemon to Your Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-lemons-permissions" class="md-nav__link">
+    💛 Check Lemon's Permissions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-lemon" class="md-nav__link">
+    💛 Setting up Lemon
+  </a>
+  
+    <nav class="md-nav" aria-label="💛 Setting up Lemon">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#muted-role" class="md-nav__link">
+    Muted Role
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logs" class="md-nav__link">
+    Logs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moderator-role" class="md-nav__link">
+    Moderator Role
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-mod" class="md-nav__link">
+    Auto-Mod
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Moderator-Guide/" class="md-nav__link">
+        Moderator GUide
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Points-And-Crown/" class="md-nav__link">
+        Points And Crown
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Warns/" class="md-nav__link">
+        Warns
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Commands/" class="md-nav__link">
+        Commands
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#is-lemon-the-right-bot-for-your-server" class="md-nav__link">
+    💛 Is Lemon the right bot for your server?
+  </a>
+  
+    <nav class="md-nav" aria-label="💛 Is Lemon the right bot for your server?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lemon-is-probably-a-useful-bot-for-your-server-if" class="md-nav__link">
+    Lemon is probably a useful bot for your server if:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lemon-is-probably-not-the-right-bot-for-your-server-if" class="md-nav__link">
+    Lemon is probably NOT the right bot for your server if:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    💛 Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-lemon-to-your-server" class="md-nav__link">
+    💛 Adding Lemon to Your Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-lemons-permissions" class="md-nav__link">
+    💛 Check Lemon's Permissions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-lemon" class="md-nav__link">
+    💛 Setting up Lemon
+  </a>
+  
+    <nav class="md-nav" aria-label="💛 Setting up Lemon">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#muted-role" class="md-nav__link">
+    Muted Role
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logs" class="md-nav__link">
+    Logs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moderator-role" class="md-nav__link">
+    Moderator Role
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-mod" class="md-nav__link">
+    Auto-Mod
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Getting Started</h1>
+                
+                <h2 id="is-lemon-the-right-bot-for-your-server">💛 Is Lemon the right bot for your server?</h2>
+<h3 id="lemon-is-probably-a-useful-bot-for-your-server-if">Lemon is probably a useful bot for your server if:</h3>
+<ul>
+<li>✅ Your server is active and needs automatic management/moderation</li>
+<li>✅ You want to give more power to your moderators</li>
+<li>✅ You need a warning system with auto-punishment system</li>
+</ul>
+<h3 id="lemon-is-probably-not-the-right-bot-for-your-server-if">Lemon is probably NOT the right bot for your server if:</h3>
+<ul>
+<li>❌ You aren't willing to learn how to use Lemon using this wiki or the dynamic help menu Lemon has</li>
+<li>❌ You aren't able and willing to read this wiki to solve most problems</li>
+<li>❌ You don't fully trust your moderators</li>
+<li>❌ You and/or your mods don't have a solid understanding of English</li>
+</ul>
+<p>If any of the above apply, then Lemon will probably not be the best bot for your server, and you should consider searching on <a href="https://www.top.gg">top.gg</a> for a different multi-purpose bot.</p>
+<h2 id="requirements">💛 Requirements</h2>
+<p>There are some light requirements for using Lemon. These requirements are in place to help save resources. Your server must meet all of the requirements below, or Lemon might automatically leave your server.
+* <strong>40 or more human members</strong> - Lemon is a multipurpose moderation bot, and if you have fewer than 40 people, why do you need a bot to moderate anything?
+* <strong>More humans than bots</strong> - Adding a lot of bots to a server just wastes resources, and making 'bot collection' servers is generally frowned upon. No server should need more bots than humans.
+* <strong>Strong knowledge of Discord and Discord bots, and the ability to read documentation</strong> - Lemon is easy-to-use for admins and moderators, but only if they are willing to put in the time to read the documentation (this wiki). In general, asking for support for a question answered here will result in being redirected back to this wiki.
+* <strong>Follow Discord's Terms of Service</strong> - While not automatically detected, if a server is reported for ToS violations, Vortex may be manually removed.</p>
+<blockquote>
+<p>⚠ <strong>Please read these requirements; Lemon may automatically leave your server if it does not meet them!</strong></p>
+</blockquote>
+<h2 id="adding-lemon-to-your-server">💛 Adding Lemon to Your Server</h2>
+<p>The first step is to make sure that Lemon is actually on your server! To add a bot to your server, you must have the <strong>Manage Server</strong> permission on the server. If you do, you can click this link to add Lemon to your server:</p>
+<blockquote>
+<p>⚠ <strong>Please read the requirements above this section; Lemon may automatically leave your server if it does not meet the requirements</strong></p>
+</blockquote>
+<p><a href="https://discordapp.com/oauth2/authorize?client_id=807296190499913738&amp;permissions=500559086&amp;scope=bot"><strong>Click here to invite Lemon</strong></a></p>
+<p>If your server isn't listed, make sure you are correctly logged in by visiting https://discordapp.com/login</p>
+<h2 id="check-lemons-permissions">💛 Check Lemon's Permissions</h2>
+<p>For Lemon to operate correctly, it needs the permissions to be able to complete necessary tasks. The easiest way to achieve this is to give the <code>Lemon</code> role the Administration permission and drag it to the top (or near the top) of the role list, like so: </p>
+<blockquote>
+<p><img alt="RoleOrder" src="https://i.imgur.com/MD4iyXg.gif" /></p>
+</blockquote>
+<h2 id="setting-up-lemon">💛 Setting up Lemon</h2>
+<p>The next step is configuring vortex for your server! You can type <code>c!helpadmin1</code> and <code>c!helpadmin2</code> to see the full list of settings commands, You can change the default <code>c!</code> prefix to anything you like if you don't like the default prefix by simply doing a <code>c!setprefix &lt;newprefix&gt;</code>. Don't worry if you forget the custom prefix you setup for the bot you can just @mention Lemon and type <code>@lemon prefix</code> and the bot will remind you the prefix you setup for your server. You can also check out the [[Full Command Reference|Commands]] to see what Lemon has to offer.</p>
+<h3 id="muted-role">Muted Role</h3>
+<p>The Muted role is the role that (usually) can be applied to a user to prevent them from sending messages, adding reactions, speaking, and connection to voice channels. If you don't already have a Muted role you can create a Muted role in the role settings of the server with the permissions of your liking and add them to the channels (I'll soon add a setup feature so that people don't have to set it up manually), if you already have a Muted role you can <code>c!setmuterole &lt;rolename&gt;</code> to setup the Muted role, Lemon should be able to set it up automatically, but if she doesn't be sure to set it up manually with the command given above.</p>
+<h3 id="logs">Logs</h3>
+<p>Lemon has various logs to keep track of different kinds of server activity. All commands for logs are found in the Admin commands, available via <code>c!helpadmin1</code> and <code>c!helpadmn2</code> or in the [[Full Command Reference|Commands]]. If your server is using the [[Warn system|Warns]], it is recommended to enable (at minimum) the ModLog.</p>
+<h3 id="moderator-role">Moderator Role</h3>
+<p>The Moderator Role is a role that allows a user with said role to use all Moderation commands. The full list of Moderation commands is available via <code>c!helpmod</code> as well as on the [[Full Command Reference|Commands]]. To set a role to be the Moderator role, use <code>c!setmodrole &lt;rolename&gt;</code> (for example, if your moderator role is called "Staff", you'd run <code>c!setmodrole @Staff</code>). To disable the Moderator role, run <code>c!setmodrole none</code>. </p>
+<p>If no Moderator role is set, Moderation commands can only be run if the user has sufficient permissions natively (they would only be able to kick or ban someone with Lemon, if they could ban them via the Discord client as well).</p>
+<p>Also, make sure to check out the [[Moderator Guide]] for helpful tips for moderating with Lemon!</p>
+<h3 id="auto-mod">Auto-Mod</h3>
+<p>For full information about the Auto-Mod and its features, check out the [[Auto-Moderation]] page. You can check the default Auto-Mod settings using <code>c!helpamin1</code> or <code>c!helpadmin2</code>.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../About-Lemon/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              About Lemon
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../Moderator-Guide/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Moderator GUide
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      
+    
+  </body>
+</html>
